@@ -24,7 +24,19 @@ function getComputerChoice(){
 }
 function checkWinner(){
     if(computerSelectionArray.length > 2 ||playerSelectionArray.length > 2){
-        if(computerSelectionArray.length >2 ){
+        if(playerSelectionArray.length > 2){
+            if(possibility1.every(v =>playerSelectionArray.includes(v))||
+             possibility2.every(v =>playerSelectionArray.includes(v))||
+             possibility3.every(v =>playerSelectionArray.includes(v))||
+             possibility4.every(v =>playerSelectionArray.includes(v))||
+             possibility5.every(v =>playerSelectionArray.includes(v))||
+             possibility6.every(v =>playerSelectionArray.includes(v))||
+             possibility7.every(v =>playerSelectionArray.includes(v))||
+             possibility8.every(v =>playerSelectionArray.includes(v)))
+            {
+                return "player";
+            }}
+       else if(computerSelectionArray.length >2 ){
 if(possibility1.every(v =>computerSelectionArray.includes(v))||
 possibility2.every(v =>computerSelectionArray.includes(v))||
 possibility3.every(v =>computerSelectionArray.includes(v))||
@@ -35,18 +47,6 @@ possibility7.every(v =>computerSelectionArray.includes(v))||
 possibility8.every(v =>computerSelectionArray.includes(v)))
 {
     return "computer";
-}}
- else if(playerSelectionArray.length > 2){
-if(possibility1.every(v =>playerSelectionArray.includes(v))||
- possibility2.every(v =>playerSelectionArray.includes(v))||
- possibility3.every(v =>playerSelectionArray.includes(v))||
- possibility4.every(v =>playerSelectionArray.includes(v))||
- possibility5.every(v =>playerSelectionArray.includes(v))||
- possibility6.every(v =>playerSelectionArray.includes(v))||
- possibility7.every(v =>playerSelectionArray.includes(v))||
- possibility8.every(v =>playerSelectionArray.includes(v)))
-{
-    return "player";
 }}}
 if(options.length===0)
 {
