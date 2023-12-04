@@ -1,0 +1,40 @@
+h1{
+   text-align: center;
+}
+button{
+    margin:0;
+    padding:0;
+   border: 8px solid black;
+   
+}
+.result{
+    text-align:center;
+    font-size:1.5rem;
+    font-weight:300;
+    color:red;
+}
+.first_row, .second_row, .last_row{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
+.first_row{
+    margin-top:50px;
+}
+.first_row>button>div, .second_row>button>div, .last_row>button>div{
+    width:100px;
+    height:100px;
+    font-size:6rem;
+}
+#box1, #box4, #box7{
+border-left-color: white;
+}
+#box3, #box6, #box9{
+    border-right-color: white;
+    }
+.first_row>button{
+    border-top-color:white;
+}
+.last_row>button{
+    border-bottom-color:white;
+}
